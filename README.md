@@ -1,2 +1,2 @@
 # Summer-in-Providence
-Website for memory of a summer in providence 
+Website for a summer in providence 
