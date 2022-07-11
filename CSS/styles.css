@@ -1,0 +1,13 @@
+/* Colors, Fonts, ETC */
+:root {
+
+}
+
+nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    flex: auto ;
+  }
+        
