@@ -3,10 +3,31 @@
 
 }
 
+/* Toggle between colors pallets to match the coresponding season a play on dark mode */
+.summer {
+  background-color: #236e96;
+  color: #15b2d3
+}
+
+.fall {
+  background-color: #540b0e;
+  color: #9e2a2b
+}
+
+.winter {
+  background-color: #32394f;
+  color: #757ca3
+}
+
+.spring {
+  background-color: #113e20;
+  color: #cce494
+}
+
 * {
   box-sizing: border-box;
-  outline: 1px solid lime !important;
-  background: rgb(0 100 0 / 0.01) !important;
+  /* outline: 1px solid lime !important; */
+  /* background: rgb(0 100 0 / 0.01) !important; */
   margin: 0%;
 }
 body {
@@ -19,6 +40,9 @@ nav {
   justify-content: space-evenly;
   width: 100%;
   margin: 10px 10px 10px 10px;
+  background-image: linear-gradient(180deg, 
+  #d4b2f6, 
+  #fa48ab);
 }
 
 nav ul {
@@ -30,14 +54,11 @@ nav ul {
     flex: auto ;
     list-style: none;
     /* padding-bottom: 20px; */
+    padding: 10px;
   }
 
-  nav  a {
-    color: linear-gradient(45deg, 
-    #7794ff, 
-    #44107A,
-    #FF1361,
-    #FFF800);
+  i {
+    color: #a4d8f4;
   }
   
   header {
@@ -86,11 +107,9 @@ nav ul {
     -ms-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    background-image: linear-gradient(45deg, 
-                      #7794ff, 
-                      #44107A,
-                      #FF1361,
-                      #FFF800);
+    background-image: linear-gradient(180deg, 
+    #a4d8f4, 
+    #fa48ab);
     animation: .8s shake infinite alternate;
   }
   

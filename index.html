@@ -25,6 +25,27 @@
         <h1>Summer In Providence</h1>
     </header>
 
+    <button onclick="mySummer()">Toggle summer</button>
+    <button onclick="myFall()">Toggle fall</button>
+    <button onclick="myWinter()">Toggle winter</button>
+    <button onclick="mySpring()">Toggle spring</button>
 
+
+    <script>
+        function mySummer() {
+           var element = document.body;
+           element.classList.toggle("summer");
+        }
+        function myFall() {
+           var element = document.body;
+           element.classList.toggle("fall");
+        }function myWinter() {
+           var element = document.body;
+           element.classList.toggle("winter");
+        }function mySpring() {
+           var element = document.body;
+           element.classList.toggle("spring");
+        }
+    </script>
 </body>
 </html>
