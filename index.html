@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Providence Home</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/ec01b1e77c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <h1>Welcome</h1>
+
         <!-- Navigation -->
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="Pages/about.html"><i class="fa-solid fa-person fa-2x"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-camera fa-2x"></i></a></li>
-                <li><a href="Pages/conversations.html"><i class="fa-solid fa-pen fa-2x"></i></i></a></li>
+                <li><a href="Pages/conversations.html"><i class="fa-solid fa-pen fa-2x"></i></i>Convos</a></li>
                 <li><a href="#"><i class="fa-solid fa-music fa-2x"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-utensils fa-2x"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-location-dot fa-2x"></i></a></li>
             </ul>
-        </nav>
-        <header>
+        </nav> -->
+    
 
-        <h1>Summer In Providence</h1>
-    </header>
+    <footer>
+        <button onclick="mySummer()">Summer in Providence</button>
+        <button onclick="myFall()">Fall in Providence</button>
+        <button onclick="myWinter()">Winter in Providence</button>
+        <button onclick="mySpring()">Spring in Providence</button>
+    </footer>
 
-    <button onclick="mySummer()">Toggle summer</button>
-    <button onclick="myFall()">Toggle fall</button>
-    <button onclick="myWinter()">Toggle winter</button>
-    <button onclick="mySpring()">Toggle spring</button>
 
-
+    <!-- Script to change URL path -->
     <script>
         function mySummer() {
-           var element = document.body;
-           element.classList.toggle("summer");
-        }
+           window.location.replace('http://127.0.0.1:5500/Pages/Seasons/summer.html')
+        } 
+
         function myFall() {
-           var element = document.body;
-           element.classList.toggle("fall");
-        }function myWinter() {
-           var element = document.body;
-           element.classList.toggle("winter");
-        }function mySpring() {
-           var element = document.body;
-           element.classList.toggle("spring");
+            window.location.replace('http://127.0.0.1:5500/Pages/Seasons/fall.html')
+
+        }
+        
+        function myWinter() {
+            window.location.replace('http://127.0.0.1:5500/Pages/Seasons/winter.html')
+
+        }
+        
+        function mySpring() {
+            window.location.replace('http://127.0.0.1:5500/Pages/Seasons/spring.html')
         }
     </script>
 </body>
